@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://home-dev.roadshowchina.cn/web-video-demo/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSC Video Player Demo</title>
+    <script src="https://www.roadshowchina.cn/public/video/1.1/flv.min.js"></script>
+    <script type="module" crossorigin src="https://home-dev.roadshowchina.cn/web-video-demo/assets/index.e149479a.js"></script>
+    <link rel="stylesheet" href="https://home-dev.roadshowchina.cn/web-video-demo/assets/index.21ae0add.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>HLS sample</h1>
+      <a href="https://home-dev.roadshowchina.cn/web-video-demo/flv.html">go to FLV sample</a>
+    </div>
+
+    <h3>直播</h3>
+    <video id="videoLiveDom" autoplay class="video-js" webkit-playsinline playsinline></video>
+    <h3>回看</h3>
+    <video id="videoDom" class="video-js"></video>
+
+    <button onclick="changeSource()">切换直播源</button>
+    <button onclick="changeDifinition()">切换回看第二个清晰度</button>
+    <button onclick="triggerError()">触发错误</button>
+
+    <!-- <script type="text/javascript" src="/rsc-video-player.umd.js"></script> -->
+  </body>
+</html>
